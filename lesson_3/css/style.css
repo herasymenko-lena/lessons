@@ -1,0 +1,48 @@
+@import url("reset.css");
+ /*Типи селекторів */
+ /* * {
+	color: brown;
+ } */
+ mark {
+	color:aquamarine;
+ }
+ .contacts {
+	color:yellowgreen;
+ }
+ #content {
+	color:blue;
+ }
+ [class*="cont"] {
+	color:red;
+ }
+ /* Комбінації селекторів */
+ div.text {
+	color:blueviolet;
+ }
+ .title__list.list {
+	color:palevioletred;
+ }
+ h1,
+ #famous-dishes,
+ #traditions {
+	color:grey;
+ }
+ /* Каскадність (вкладеність) селекторів*/
+ .title h2 {
+	color:darkblue;
+ }
+ .title .text {
+	color:darkgreen;
+ }
+ .text * {
+	color:orange;
+ }
+ .title > p {
+	color:yellow;
+ }
+ .text ~ p {
+	color:purple;
+ }
+ .contacts + a {
+	color:lightskyblue;
+ }
