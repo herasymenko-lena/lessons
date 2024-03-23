@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Bad Script';
+	src: url('../fonts/BadScript-Regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNovaRegular.woff2') format('woff2');
+}
