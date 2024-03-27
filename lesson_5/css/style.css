@@ -1,0 +1,302 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500&display=swap);
+@import url("fonts.css");
+@import url("reset.css");
+
+.header h1 {
+	font-size: 50px;
+	color:blueviolet;
+	text-align: center;
+	text-shadow: 2px 5px 7px grey,
+					-2px -2px 10px yellow;
+}
+
+.content {
+	font-size: 20px;
+	font-style: italic;
+	color:blueviolet;
+	margin-top: 20px;
+	max-width: 50%;
+	padding: 10px;
+}
+
+#practice,
+#task-1,
+#task-2,
+#task-3,
+.footer {
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	color:blueviolet;
+	padding: 10px;
+}
+/* Практика. Відступи - padding margin*/
+ .block {
+	background-color:aqua;
+	padding: 20px;
+	/* padding: 10px 50px; */
+	/* padding: 20px 10px 40px; */
+	/* padding: 10px 30px 15px 45px; */
+	/* padding-left: 50px; */
+	/* padding: 10%; */
+	/* margin: 50px; */
+	margin: 10px 30px 15px 45px;
+	/* margin-left: -50px; */
+	/* margin: 20%; */
+}
+
+.inline {
+	background-color:coral;
+	/* padding: 20px 50px; */
+	margin-left: 20px;
+	margin-right: 20px;
+	/* margin-bottom: 30px; */
+}
+
+.inline-block {
+	background-color:blue;
+	padding: 10px 30px;
+	/* margin-top: -40px; */
+	margin: 30px;
+} 
+/* Практика властивостей розмірів */
+.block-1 {
+	background-color:aqua;
+	/* width: auto; */
+	padding: 20px;
+	margin-bottom: 20px;
+	width: 400px;
+	/* width: 50%; */
+	max-width: 400px;
+	min-width: 300px;
+	height: 100px;
+	max-height: 200px;
+	min-height: 50 px;
+	/* box-sizing: content-box; */
+	/* box-sizing: border-box; */
+	/* overflow: visible; */
+	/* overflow: hidden; */
+	/* overflow: clip; */
+	/* overflow: scroll; */
+	overflow: auto;
+}
+
+.inline-1 {
+	background-color:coral;
+	/* width: 100px; */
+	/* max-width: 500px;
+	min-width: 400px; */
+	/* height: 200px; */
+}
+
+.inline-block-1 {
+	background-color: blue;
+	/* width: auto; */
+	/* width: 100px; */
+	/* width: 10%; */
+	max-width: 100%;
+	height: 150px;
+	/* overflow: hidden; */
+	/* vertical-align: top; */
+	vertical-align: middle;
+	/* vertical-align: bottom; */
+}
+/* Display властивість */
+.block-2 {
+	background-color:aqua;
+	width: 300px;
+	padding: 30px;
+	margin-top: 20px;
+	/* display: inline-block; */
+	display: inline;
+	/* display: block; за замовчуванням */
+}
+
+.inline-2 {
+	background-color:coral;
+	width: 300px;
+	padding: 30px;
+	margin-top: 20px;
+	display: inline-block;
+	/* display: inline; за замовчуванням */
+}
+
+.inline-block-2 {
+	background-color: blue;
+	/* display: inline-block; за замовчуванням */
+	/* display: inline; */
+	/* display: none; */
+}
+/* Центрування блоку */
+.block-center {
+	background-color:yellowgreen;
+	width: 90%;
+	margin-top: 30px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+/* Приклад побудови конструкції */
+.section-example {
+	max-width: 600px;
+	margin: 0 auto;
+	/* overflow: hidden; */
+}
+.example {
+	margin: 0 -5px;
+	font-size: 0;
+}
+
+.example-item {
+	width: 33.333%;
+	display: inline-block;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.example-content {
+	background-color: pink;
+	text-align: center;
+	font-size: 40px;
+	padding: 10px;
+	color: white;
+}
+/* Верстка частин макетів */
+/* Завдання №1 */
+.task-1 {
+	font-family: Roboto, sans-serif;
+	background-color: rgb(30, 50, 49, 0.05);
+	width: 100%;
+	padding-top: 100px;
+}
+
+.title-task-1 {
+	color: #000;
+	font-size: 50px;
+	text-align: center;
+	text-transform: capitalize;
+	margin-bottom: 60px;
+}
+
+.items {
+	max-width: 1320px;
+	margin: 0 auto;
+}
+
+.item {
+margin: 0 -12px;
+font-size: 0;
+}
+
+.content-item {
+	/* width: 16.667%; */
+	display: inline-block;
+	padding-left: 12px;
+	padding-right: 12px;
+	margin-bottom: 100px;
+}
+/* Завдання №2 */
+.task-2 {
+	font-family: "Proxima Nova", sans-serif;
+	font-weight: 400;
+	background-color: #f8f8f8;
+	color: #2b2929;
+	max-width: 1920px;
+}
+
+.krovato-article {
+	max-width: 1070px;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+.title-task-2 {
+	font-size: 40px;
+	line-height: 120%; /* 48/40 */
+	margin-bottom: 40px;
+}
+
+.image-task-2 {
+	width: 100%;
+	max-width: 1070px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.article {
+	font-size: 16px;
+	line-height: 187.5%; /* 30/16 */
+}
+.article-1,
+.article-2 {
+	margin-bottom: 10px;
+}
+.article-2 {
+	margin-bottom: 40px;
+}
+
+.article-subtitle {
+	font-size: 20px;
+	line-height: 140%; /* 28/20 */
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+.list {
+	margin-bottom: 40px;
+	margin-left: 47px;
+	line-height: 187.5%; /* 30/16 */
+}
+
+.article-3 {
+	line-height: 187.5%; /* 30/16 */
+}
+
+/* Завдання №3 */
+.task-3 {
+	font-family: "Proxima Nova", sans-serif;
+	font-weight: 400;
+	background-color: #f8f8f8;
+	color: #2b2929;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.title-task-3 {
+	font-size: 40px;
+	line-height: 120%; /* 48/40 */
+	text-align: center;
+	margin-bottom: 40px;
+}
+.content-columns {
+	max-width: 1290px;
+	margin: 0 auto;
+}
+
+.marks {
+	margin: 0 -15px;
+	font-size: 0;
+}
+
+.content-marks {
+	width: 25%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.img-mark {
+	margin-bottom: 20px;
+}
+
+.title-mark {
+	font-size: 26px;
+	line-height: 130.769231%; /* 34/26 */
+	margin-bottom: 20px;
+}
+
+.about-mark {
+	font-size: 16px;
+	line-height: 187.5%; /* 30/16 */
+}
