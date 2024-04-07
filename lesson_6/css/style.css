@@ -248,7 +248,7 @@ line-height: 187.5%; /* 30/16 */
 .collections__image {
 	display: inline-block;
 	max-width: 424px;
-	vertical-align: top; */
+	vertical-align: top;
 	padding: 81px 0 60px 0;
 	font-size: 0;
 }
