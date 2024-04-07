@@ -1,0 +1,261 @@
+@import url("fonts.css");
+@import url(https://fonts.googleapis.com/css?family=Quicksand:500,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular&display=swap);
+@import url("reset.css");
+
+.header {
+	background-image: url("../img/bg_header.jpg");
+	padding: 10px;
+	/* background-size: contain; */
+	/* background-size: cover; */
+}
+
+.header h1 {
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	color: white;
+}
+.content {
+	font-size: 20px;
+	font-weight: 700;
+	font-style: italic;
+	line-height: 1.2;
+	color:white;
+	padding-top: 20px;
+}
+
+#practice,
+#task-1,
+#task-2,
+#task-3,
+.footer {
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	color:blue;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/* Вивчення властивостей */
+.lesson {
+	max-width: 1070px;
+	margin: 0 auto;
+	font-size: 20px;
+	/* opacity: 0.5; */
+	background-image: linear-gradient(101deg, rgba(2,0,36,1) 11%, rgba(179,226,73,1) 47%, rgba(0,212,255,1) 87%);
+	/* background-image: url("../img/icon.png");
+	background-repeat: no-repeat;
+	background-position: left; */
+	/* background-attachment: fixed; */
+	/* background: red url("../img/practice_2.jpg") center / 100px no-repeat scroll,
+					url("../img/practice_1.jpg") center / 700px no-repeat scroll; */
+}
+.lesson__block {
+	background-color:aqua;
+	margin-bottom: 20px;
+	/* border: 2px solid yellow; */
+	/* border-top: 5px solid red;
+	border-right: 5px dotted yellow;
+	border-left: 10px dashed green;
+	border-bottom: 5px double black; */
+	outline: 5px dotted salmon;
+	outline-offset: 5px;
+	border-radius: 10px;
+	box-shadow: inset 0 0 3px 2px purple,
+					0 0 7px 10px yellow;
+	/* visibility: hidden; */
+}
+.lesson__inline {
+	background-color:peachpuff;
+	line-height: 1.5;
+	/* border: 3px solid yellowgreen; */
+	outline: 2px solid green;
+	outline-offset: 5px;
+	border-radius: 20px;
+}
+.lesson__inline-block {
+	/* border: 2px solid yellow; */
+	outline: 5px dashed pink;
+	border-radius: 61% 39% 29% 71% / 79% 64% 36% 21%;
+	box-shadow: 0 0 5px 10px lightblue;
+	/* background-attachment: fixed; */
+}
+.lesson__circle {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+.lesson__button {
+	max-width: 200px;
+	background-color: palevioletred;
+	padding: 10px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 5px;
+	color:#f8f8f8;
+	box-shadow: 0 5px 0px black;
+
+}
+
+/* Завдання №1 - верстка частини макета*/
+.article {
+	font-family: "Proxima Nova", sans-serif;
+	background-color: #f8f8f8;
+	padding-top: 75px;
+	padding-bottom: 40px;
+	color: #2b2929;
+}
+.article__container {
+	max-width: 1070px;
+	margin: 0 auto;
+}
+.article__container > * {
+	margin-bottom: 40px;
+
+}
+.article__title {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 120%; /* 48/40 */
+}
+.article__image {
+	max-width: 100%;
+	border-radius: 8px;
+}
+.article__text p {
+  line-height: 187.5%; /* 30/16 */
+  margin-bottom: 10px;
+}
+.article__caption-list {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 140%; /* 28/20 */
+	margin-bottom: 30px;
+}
+.article__list li {
+	line-height: 187.5%; /* 30/16 */
+	padding-left: 47px;
+	background: url("../img/li-icon.svg") 2.67px 2.67px no-repeat;
+	margin-bottom: 20px;
+}
+#last-item {
+	margin-bottom: 0;
+}
+.article__last-paragraph {
+line-height: 187.5%; /* 30/16 */
+}
+
+/* Завдання №2 - верстка частини макета*/
+.banner {
+	font-family: "Quicksand", sans-serif;
+	background: url("../img/bg-2.png") 0 0 / cover no-repeat,
+					url("../img/gradient_bg.png") 0 0 / cover no-repeat;
+	box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
+}
+.banner__container {
+	max-width: 1280px;
+	margin: 0 auto;
+	color: #fff;
+}
+.banner__content {
+	max-width: 600px;
+	display: inline-block;
+	padding: 121px 0;
+}
+.banner__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 120%; /* 48/40 */
+	margin-bottom: 24px;
+}
+.banner__text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 160%; /* 32/20 */
+  margin-bottom: 24px;
+}
+.banner__image {
+	display: inline-block;
+	width: 547px;
+	vertical-align: top;
+}
+.banner__link {
+	color: #0d1216;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 156.25%; /* 25/16 */
+  max-width: 217px;
+  background-color: #fff;
+  padding: 11.5px 20px;
+  border-radius: 8px 8px 8px 8px;
+}
+.banner__link img {
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+/* Завдання №3 - верстка частини макета*/
+.collections {
+	max-width: 1920px;
+	font-family: "Roboto", sans-serif;
+	color:  #000;
+	padding-top: 100px;
+	background: url("../img/bg_collections.png") center / cover no-repeat;
+}
+.collections__container {
+	max-width: 1226px;
+	margin: 0 auto;
+	font-size: 0;
+}
+.collections__content {
+	max-width: 686px;
+	padding: 74px 0px 124px 0px;
+	margin-right: 98px;
+	display: inline-block;
+}
+.collections__title {
+	font-size: 74px;
+	font-weight: 300;
+	line-height: 74.324324%; /* 55/74 */
+	margin-bottom: 52px;
+}
+.collections__text {
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 183.333333%; /* 55/30 */
+	text-transform: capitalize;
+	margin-bottom: 66px;
+}
+.collections__link {
+	color: #fff;
+	font-size: 29px;
+	font-weight: 400;
+	text-transform: capitalize;
+	background-color: #1e2832;
+	max-width: 223px;
+	padding: 19px 26px;
+	display: inline-block;
+}
+.collections__link img {
+	vertical-align: middle;
+	margin: 8px;
+}
+
+.collections__image {
+	display: inline-block;
+	max-width: 424px;
+	vertical-align: top; */
+	padding: 81px 0 60px 0;
+	font-size: 0;
+}
+.collections__image img {
+	border-radius: 160px 0;
+	width: 424px;
+	height: 542px;
+	box-shadow: 18px 20px 0 -2px rgb(244, 244, 245),
+					18px 20px rgba(0, 0, 0, 0.25);
+}
