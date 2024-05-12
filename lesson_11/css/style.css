@@ -50,7 +50,7 @@ body {
 }
 .item-transform-2d,
 .item-transform-3d {
-	font-weight: regular;
+	font-weight: 400;
 	color: yellow;
 	text-align: center;
 	text-transform: uppercase;
@@ -83,7 +83,7 @@ body {
 	transform: rotate(20deg);
 }
 .transform-2d__content:hover .transform-2d__item-8 {
-	transform-origin: (20px 40px);
+	transform-origin: 20px 40px;
 	transform: rotate(-45deg);
 }
 /* ========3D======= */
