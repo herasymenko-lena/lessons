@@ -134,10 +134,10 @@ body {
 }
  @keyframes spin {
 	0% {
-		rotate: 0deg;
+		transform: rotate(0deg);
 	}
 	100% {
-		rotate: 360deg;
+		transform: rotate(360deg);
 	}
 } 
  @keyframes moving {
@@ -328,10 +328,10 @@ body {
 }
 @keyframes wheel-rotate {
 	0% {
-		rotate: 0deg;
+		transform: rotate(0deg);
 	}
 	100% {
-		rotate: 360deg;
+		transform: rotate(360deg);
 	}
 }
 @keyframes sun-rise {
@@ -347,6 +347,6 @@ body {
 		transform: translate(0px,0px);
 	}
 	100% {
-		transform: translate(500px, 0px);
+		transform: translate(1000px, 0px);
 	}
 }
