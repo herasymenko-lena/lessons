@@ -1,0 +1,352 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:regular,500,600&display=swap);
+@import url("reset.css");
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	font-family: "Comfortaa", serif;
+}
+body {
+	background: url("../img/nasa_bg.webp");
+}
+.header {
+	padding: 20px;
+}
+.header__title {
+	font-size: 40px;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	color: rgb(253, 253, 250);
+}
+.page {
+}
+.practice {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+/* =======Transition======== */
+.transition,
+.animation {
+	width: 100%;
+	margin: 0 auto;
+}
+.transition__title,
+.animation__title {
+	font-size: 30px;
+	font-weight: 500;
+	text-align: center;
+	color: white;
+	padding: 10px;
+	background-color:rgb(39, 4, 68);
+}
+.transition__content,
+.animation__content {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	background: rgb(248, 248, 248, 0.4);
+	margin: 10px;
+}
+.transition__item-1 {
+}
+.item-transition {
+	font-weight: 400;
+	color: yellow;
+	text-align: center;
+	text-transform: uppercase;
+	width: 200px;
+	height: 200px;
+	background: rgb(4, 40, 139);
+	padding-top: 40px;
+	border: 2px solid;
+	transition-property: background-color, width;
+	transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.transition__content:hover .transition__item-1 {
+	background: #d30505;
+	transition-duration: 1s;
+}
+.transition__content:hover .transition__item-2 {
+	background-color: greenyellow;
+	width: 300px;
+	transition-duration: 2s;
+}
+.transition__content:hover .transition__item-3 {
+	background-color: greenyellow;
+	transition-duration: 2s;
+}
+.transition__content:hover .transition__item-4 {
+	background-color: green;
+	width: 300px;
+	height: 300px;
+	transition-duration: 2s;
+}
+/* ========Animation======= */
+.item-animation {
+	font-weight: 400;
+	color: yellow;
+	text-align: center;
+	text-transform: uppercase;
+	width: 200px;
+	height: 200px;
+	background: rgb(4, 40, 139);
+	padding-top: 40px;
+	border: 2px solid;
+}
+.animation__content {
+	perspective: 400px;
+	perspective-origin: center;
+	transform-style: preserve-3d;
+}
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+		background-color: purple;
+	}
+	50% {
+		background-color: yellow;
+	}
+	100% {
+		transform: rotate(360deg);
+		background-color: purple;
+	}
+}
+.animation__content:hover .animation__item-1 {
+	animation-name: rotate;
+	animation-duration: 3s;
+}
+
+
+
+/* =======Flipper======== */
+.card {
+	padding-top: 30px;
+	margin-bottom: 20px;
+}
+.card__body {
+	position: relative;
+	width: 200px;
+	perspective: 500px;
+	animation: moving 5s linear infinite alternate forwards, spin 3s linear infinite normal forwards;
+}
+.card__body img {
+	max-width: 100%;
+}
+ @keyframes spin {
+	0% {
+		rotate: 0deg;
+	}
+	100% {
+		rotate: 360deg;
+	}
+} 
+ @keyframes moving {
+	0% {
+		left: 0px;
+	}
+	100% {
+		left: 1000px;
+	}
+} 
+
+
+
+/* =======Car======== */
+.car {
+	width: 1500px;
+	height: 1000px;
+	background: url("../img/city_bg.jpg") 0 0 / 100% no-repeat;
+	position: relative;
+}
+.car__body {
+	position: relative;
+}
+.items {
+	position: relative;
+}
+.items__frame {
+	width: 800px;
+	height: 180px;
+	background-color: #d30505;
+	border-radius: 27% 73% 3% 97% / 34% 68% 32% 66%;
+	border: 1px solid black;
+	position: absolute;
+	top: 700px;
+	left: 100px;
+	z-index: 2;
+	transform: rotate(-5deg);
+}
+.items__roof {
+	width: 310px;
+	height: 120px;
+	background-color: #d30505;
+	border-radius: 47% 53% 3% 97% / 100% 68% 32% 0%;
+	border: 1px solid black;
+	position: absolute;
+	top: 600px;
+	left: 370px;
+	z-index: 1;
+}
+.items__window {
+	width: 290px;
+	height: 100px;
+	background-color: rgb(104, 128, 180);
+	border-radius: 47% 53% 3% 97% / 100% 68% 32% 0%;
+	border: 1px solid black;
+	position: absolute;
+	top: 610px;
+	left: 380px;
+	z-index: 4;
+} 
+.items__door {
+	position: absolute;
+	top: 720px;
+	left: 420px;
+	z-index: 10;
+	transform: scale(-1,1);
+	width: 210px;
+	height: 140px;
+	border-radius: 43% 57% 0% 100% / 55% 0% 100% 45%;
+	border: 2px solid black;
+	background-color: #d30505;
+}
+.items__door::after {
+	content: "";
+	width: 30px;
+	height: 5px;
+	border-radius: 2px;
+	background-color: black;
+	position: absolute;
+	top: 50px;
+	left: 10px;
+}
+.items__front-light {
+	width: 50px;
+	height: 48px;
+	background-color: rgb(248, 232, 5);
+	border-radius: 58% 42% 13% 87% / 39% 0% 100% 61%; 
+	border: 1px solid black;
+	position: absolute;
+	top: 760px;
+	left: 80px;
+	z-index: 7;
+}
+.items__back-light {
+	width: 70px;
+	height: 20px;
+	background-color: rgb(255, 141, 10);
+	border-radius: 46% 54% 0% 100% / 51% 18% 82% 49%; 
+	border: 1px solid black;
+	position: absolute;
+	top: 777px;
+	left: 827px;
+	z-index: 7;
+	transform: scale(-1,1);
+}
+.left-wheel {
+	position: absolute;
+	top: 810px;
+	left: 300px;
+	z-index: 4;
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	border-radius: 50%;
+	border: 6px dashed #313130;
+}
+.left-wheel__element {
+	position: absolute;
+	top: 22px;
+	left: 23px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #4e1010;
+	border: 5px double rgb(61, 48, 48);
+	z-index: 5;
+}
+.right-wheel {
+	position: absolute;
+	top: 810px;
+	left: 650px;
+	z-index: 4;
+	width: 100px;
+	height: 100px;
+	background-color: black;
+	border-radius: 50%;
+	border: 6px dashed #313130;
+}
+.right-wheel__element {
+	position: absolute;
+	top: 22px;
+	left: 23px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #4e1010;
+	border: 5px double rgb(61, 48, 48);
+	z-index: 5;
+}
+.car__body {
+	animation: car-move 9s linear infinite normal none;
+}
+.left-wheel,
+.right-wheel {
+	animation: wheel-rotate 5s linear infinite normal none;
+}
+
+/* =======Sky====== */
+.sun {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: yellow;
+	position: absolute;
+	top: 300px;
+	left: -100px;
+	border: 20px double rgb(255, 165, 0, 0.5);
+	animation: sun-rise 20s ease-in infinite normal none;
+}
+.cloud {
+	animation: cloud-move 20s ease-in infinite reverse none;
+}
+.cloud img {
+	width: 300px;
+	height: 150px;
+	position: absolute;
+	top: 250px;
+	left: 0px;
+	opacity: 0.5;
+}
+@keyframes car-move {
+	0% {
+		left: 1500px;
+	}
+	100% {
+		left: -1000px;
+	}
+}
+@keyframes wheel-rotate {
+	0% {
+		rotate: 0deg;
+	}
+	100% {
+		rotate: 360deg;
+	}
+}
+@keyframes sun-rise {
+	0% {
+		transform: translate(0px,0px);
+	}
+	100% {
+		transform: translate(1500px,-200px);
+	}
+}
+@keyframes cloud-move {
+	0% {
+		transform: translate(0px,0px);
+	}
+	100% {
+		transform: translate(500px, 0px);
+	}
+}
