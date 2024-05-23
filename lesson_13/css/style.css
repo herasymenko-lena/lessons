@@ -198,7 +198,7 @@ opacity: 0.5;
 .middle-header__icons-bask {
 	width: 50px;
 	height: 50px;
-	transition: all 0.3;
+	transition: 0.3s;
 }
 .middle-header__icons-favor:hover,
 .middle-header__icons-bask:hover {
@@ -300,7 +300,7 @@ main {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	transition: transform 0.3s;
+	transition: 0.3s;
 }
 .item-categories__link:hover {
 	transform: scale(1.1);
