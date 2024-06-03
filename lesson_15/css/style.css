@@ -340,3 +340,8 @@ body {
 		justify-content: flex-start;
 	}
 }
+@media (max-width:479.98px) {
+	.bottom-header__list {
+		display: none;
+	}
+}
