@@ -66,9 +66,11 @@ body {
 	justify-content: flex-end;
 	align-items: center;
 	gap: 10px;
+	object-fit: contain;
 }
 .contacts__image {
 	width: 30px;
+	object-fit: contain;
 	transition: all 0.4s;
 }
 @media (any-hover:hover) {
@@ -120,6 +122,7 @@ body {
 .middle-header__logo img {
 	max-width: 250px;
 	width: 100%;
+	object-fit: contain;
 }
 .middle-header__button {
 	color: #fff;
@@ -227,6 +230,7 @@ body {
 	display: flex;
 	align-items: center;
 	max-width: 24px;
+	object-fit: contain;
 	transition: all 0.4s;
 }
 @media (any-hover:hover) {
@@ -242,6 +246,7 @@ body {
 .middle-header__icons-bask {
 	width: 50px;
 	height: 50px;
+	object-fit: contain;
 	transition: all 0.4s;
 }
 @media (any-hover:hover) {
